@@ -1,0 +1,21 @@
+package propertiesFile;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.junit.Test;
+
+public class GgetValues {
+
+	
+	@Test
+	public void getValues() throws IOException {
+		
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"src/test/java/propertiesFile/config.properties");
+prop.load(fis);
+prop.getProperty("browser");
+	}
+}

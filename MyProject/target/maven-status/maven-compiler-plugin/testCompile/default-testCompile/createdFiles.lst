@@ -1,0 +1,6 @@
+stepDefinitions\HotelSearch.class
+runnerTests\RunnerTest.class
+stepDefinitions\Login.class
+stepDefinitions\ConfirmBooking.class
+stepDefinitions\HotelSelect.class
+stepDefinitions\Book_A_Hotel.class

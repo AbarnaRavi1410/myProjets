@@ -1,0 +1,18 @@
+package propertiesFile;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.junit.Test;
+
+public class GgetValues {
+
+	
+	@Test
+	private void getValues() {
+		
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"src/test/java/propertiesFile/config.properties");
+
+	}
+}

@@ -1,0 +1,8 @@
+Feature: Hotel Booking Automation
+  
+  Scenario: SignIn Page check
+    Given User landing on the hotel sign in page
+    When User enters the username "AbuAban1410"and password "Aban@1410"
+    And User clicking on the login button
+    Then Hotel search page should appear
+   

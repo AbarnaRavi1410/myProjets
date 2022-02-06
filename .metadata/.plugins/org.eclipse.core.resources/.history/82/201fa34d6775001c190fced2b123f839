@@ -1,0 +1,63 @@
+package SDP;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class ObjectManager {
+	
+	public WebDriver driver;
+	private Login_Pg login;
+	private Create_Account createAcc;
+	private Hotel_Search hotelSearch;
+	private Hotel_Select hotelSelect;
+	private Book_A_Hotel bookHotel;
+	private Confirm_Booking confirmBooking;
+	
+	
+	public ObjectManager(WebDriver driver2) {
+		
+		this.driver = driver2;
+	}
+
+	
+	
+	public Login_Pg loginInstance() {
+		login = new Login_Pg(driver);
+		return login;
+
+	}
+	
+	public Create_Account createAccInstance() {
+		createAcc = new Create_Account(driver);
+		return createAcc;
+			}
+	
+	public Hotel_Search holtelSearchInstance() {
+		hotelSearch = new Hotel_Search(driver);
+		return hotelSearch;
+
+	}
+	
+	public Hotel_Select hotelSelectInstance() {
+		hotelSelect = new Hotel_Select(driver);
+		return hotelSelect;
+	}
+	
+	public Book_A_Hotel bookHotelInstance() {
+		bookHotel = new Book_A_Hotel(driver);
+		return bookHotel;
+		
+	}
+	
+	public Confirm_Booking confirm_BookingInstance()
+	{
+		confirmBooking = new Confirm_Booking(driver);
+		return confirmBooking;
+	}
+
+
+
+	
+	
+
+}

@@ -1,0 +1,15 @@
+package propertiesFile;
+
+public class DataManager {
+
+	
+	public DataManager() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static PropertiesDataDrive propDataDriveInstance() {
+		PropertiesDataDrive pdd = new PropertiesDataDrive();
+		return pdd;
+		
+	}
+}

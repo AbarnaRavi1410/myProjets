@@ -1,0 +1,31 @@
+package propertiesFile;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+public class propertiesDataDrive {
+	
+	
+	public static Properties prop;
+	
+	public static void setValue() throws IOException {
+		
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream("/MyProject/src/test/java/propertiesFile/data.properties");
+		prop.load(fis);
+
+	}
+	public static String getBrowserName() {
+		String browserName = prop.getProperty("browser");
+		return browserName;
+
+	}
+	
+	public static String getUrl() {
+		String urlLink = prop.getProperty("url");
+		return urlLink;
+	}
+
+}

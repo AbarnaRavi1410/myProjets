@@ -1,0 +1,16 @@
+package propertiesFile;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class propertiesDataDrive {
+	
+	public void setValue() {
+		
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream("/MyProject/src/test/java/propertiesFile/data.properties");
+		
+
+	}
+
+}
